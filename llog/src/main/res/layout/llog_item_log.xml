@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/llog_background"
+    android:orientation="vertical"
+    android:paddingTop="2dp">
+
+    <RelativeLayout
+        android:id="@+id/llog_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/llog_tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/llog_level_v"
+            android:ellipsize="end"
+            android:maxWidth="160dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:singleLine="true"
+            android:textColor="@color/llog_text_inverse"
+            android:textSize="@dimen/llog_tag"
+            android:textStyle="normal"
+            android:typeface="monospace"
+            tools:text="Main" />
+
+        <TextView
+            android:id="@+id/llog_pid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/llog_time_text"
+            android:background="@color/llog_text_bg"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/llog_text_weak"
+            android:textSize="@dimen/llog_tag"
+            android:typeface="monospace"
+            android:visibility="gone"
+            tools:text="13425" />
+
+        <TextView
+            android:id="@+id/llog_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/llog_text_bg"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/llog_text_weak"
+            android:textSize="@dimen/llog_tag"
+            android:typeface="monospace"
+            tools:text="03-16 16:10:00.365" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/llog_level_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/llog_level_v"
+            android:gravity="center"
+            android:minEms="1"
+            android:textColor="@color/llog_text_inverse"
+            android:textSize="@dimen/llog_text"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:text="I" />
+
+        <TextView
+            android:id="@+id/llog_message_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/llog_text_v"
+            android:textSize="@dimen/llog_text"
+            android:typeface="monospace"
+            tools:text="这是一条日志信息Hello\n这是一条日志信息" />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/llog_space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/llog_divider" />
+</LinearLayout>

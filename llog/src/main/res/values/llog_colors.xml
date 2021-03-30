@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="llog_background">#F8F8F8</color>
+    <color name="llog_divider">#DDDDDD</color>
+    <color name="llog_icon">#666666</color>
+
+    <color name="llog_text">#333333</color>
+    <color name="llog_text_weak">#999999</color>
+    <color name="llog_text_inverse">#FFFFFF</color>
+    <color name="llog_text_bg">#EEEEEE</color>
+
+    <color name="llog_text_v">#333333</color>
+    <color name="llog_text_d">#0070BB</color>
+    <color name="llog_text_i">#3C9B29</color>
+    <color name="llog_text_w">#D77A00</color>
+    <color name="llog_text_e">#D70000</color>
+    <color name="llog_text_a">#8F0005</color>
+
+    <color name="llog_text_weak_v">#30333333</color>
+    <color name="llog_text_weak_d">#300070BB</color>
+    <color name="llog_text_weak_i">#303C9B29</color>
+    <color name="llog_text_weak_w">#30D77A00</color>
+    <color name="llog_text_weak_e">#30D70000</color>
+    <color name="llog_text_weak_a">#308F0005</color>
+
+    <color name="llog_level_v">#60333333</color>
+    <color name="llog_level_d">#600070BB</color>
+    <color name="llog_level_i">#603C9B29</color>
+    <color name="llog_level_w">#60D77A00</color>
+    <color name="llog_level_e">#60D70000</color>
+    <color name="llog_level_a">#608F0005</color>
+</resources>

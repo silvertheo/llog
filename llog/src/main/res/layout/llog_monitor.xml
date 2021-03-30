@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llog_monitor_layout"
+    android:layout_width="220dp"
+    android:layout_height="220dp"
+    android:background="#666666"
+    android:padding="2dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#666666" />
+
+    <ImageView
+        android:id="@+id/llog_monitor_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:ignore="ContentDescription" />
+
+    <RadioGroup
+        android:id="@+id/llog_monitor_levels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:checkedButton="@+id/llog_monitor_level_v"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/llog_monitor_level_v"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="V"
+            android:textColor="@color/llog_selector_level_v"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <RadioButton
+            android:id="@+id/llog_monitor_level_d"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="@color/llog_selector_level_d"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <RadioButton
+            android:id="@+id/llog_monitor_level_i"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="I"
+            android:textColor="@color/llog_selector_level_i"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <RadioButton
+            android:id="@+id/llog_monitor_level_w"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="W"
+            android:textColor="@color/llog_selector_level_w"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <RadioButton
+            android:id="@+id/llog_monitor_level_e"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="E"
+            android:textColor="@color/llog_selector_level_e"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <RadioButton
+            android:id="@+id/llog_monitor_level_a"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/llog_selector_level_a"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/llog_monitor_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/llog_monitor_levels"
+        android:background="@color/llog_divider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/llog_monitor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llog_monitor_divider"
+        android:layout_below="@+id/llog_monitor_close"
+        android:fadeScrollbars="true"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.theo.llog.widget.ScaleDragger
+        android:id="@+id/llog_monitor_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/llog_ic_scale_dragger" />
+</RelativeLayout>

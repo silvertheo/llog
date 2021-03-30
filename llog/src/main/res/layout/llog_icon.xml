@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="36dp"
+    android:background="@color/llog_icon"
+    android:gravity="center"
+    android:padding="4dp"
+    android:text="LLOG"
+    android:textColor="@color/llog_text_inverse"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:typeface="monospace" />
