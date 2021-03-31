@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">llog</string>
+    <string name="app_name">LLOG</string>
+
+    <string name="btn_1">打印日志</string>
+    <string name="btn_2">打印6种日志</string>
+    <string name="btn_3">打印异常日志</string>
 </resources>
