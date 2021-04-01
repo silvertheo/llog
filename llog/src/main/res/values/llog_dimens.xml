@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="llog_icon">14sp</dimen>
-    <dimen name="llog_text">12sp</dimen>
+    <dimen name="llog_text">9sp</dimen>
     <dimen name="llog_tag">8sp</dimen>
 </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="llog_level_v">V</string>
+    <string name="llog_level_d">D</string>
+    <string name="llog_level_i">I</string>
+    <string name="llog_level_w">W</string>
+    <string name="llog_level_e">E</string>
+    <string name="llog_level_a">A</string>
+</resources>
